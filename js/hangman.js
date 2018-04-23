@@ -31,6 +31,15 @@ $(".replayBtn").on("click", function()
     location.reload();
 });
 
+$(".hint").on("click", function() 
+{
+    $("#hint").append("<span class='hint'>Hint: " + selectedHint + "</span>")
+    remainingGuesses--;
+    updateMan();
+    updateBoard();
+    disableButton($(this));
+});
+
 
 
 //FUNCTIONS
@@ -82,7 +91,7 @@ function updateBoard()
     }
     
     $("#word").append("<br />");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>")
+    //$("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>")
 }
 
 // Update word then update board

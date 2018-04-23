@@ -17,6 +17,10 @@
             
             <div id="word"></div>
             <div id="letters"></div>
+        
+             <div id="hint">
+                <button class="hint btn">Hint</button>
+            </div>    
             
             <div id="won">
                 <h2>You Won!</h2>
